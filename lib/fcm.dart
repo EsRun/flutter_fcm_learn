@@ -43,11 +43,13 @@ class Fcm{
   // 푸시 메세지 클릭 시 페이지 이동
   void handleMessage(RemoteMessage? message){
     if(message == null) return;
-    
+
+    /* background fcm 알람 클릭 시 페이지 이동 코드
     navigatorKey.currentState?.pushNamed(
       '/notification_screen',
       arguments: message,
     );
+    */
   }
   
   Future initPushNotification() async{
