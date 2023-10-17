@@ -1,5 +1,5 @@
 import 'package:fcm_learn/NotificationPage.dart';
-import 'package:fcm_learn/fcm.dart';
+import 'package:fcm_learn/Fcm.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -15,7 +15,7 @@ final navigatorKey = GlobalKey<NavigatorState>();
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform,);
-  await fcm().initNotifications();
+  await Fcm().initNotifications();
   runApp(const MyApp());
 }
 
