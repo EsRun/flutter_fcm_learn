@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "657878967562",
+    "project_id": "fir-fcm-learning",
+    "storage_bucket": "fir-fcm-learning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657878967562:android:305109cf14dbd908fb86f3",
+        "android_client_info": {
+          "package_name": "com.example.fcm_learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657878967562-89gjig30amrd1fn10v9nf031bdose386.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Y8DLyxst0p4cZfrhnlmiBf1eCdXWYQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657878967562-89gjig30amrd1fn10v9nf031bdose386.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "657878967562-47d8hu3hafq1kij88ip0m6u25ldrsgsk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLearning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657878967562:android:86483914de7f64abfb86f3",
+        "android_client_info": {
+          "package_name": "com.example.flutter_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657878967562-89gjig30amrd1fn10v9nf031bdose386.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Y8DLyxst0p4cZfrhnlmiBf1eCdXWYQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657878967562-89gjig30amrd1fn10v9nf031bdose386.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "657878967562-47d8hu3hafq1kij88ip0m6u25ldrsgsk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterLearning"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
