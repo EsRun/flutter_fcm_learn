@@ -6,10 +6,6 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 
-Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  print("Handling a background message: ${message.data}");
-}
-
 final navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> main() async{
