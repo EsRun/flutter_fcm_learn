@@ -44,7 +44,7 @@ class Fcm{
   void handleMessage(RemoteMessage? message){
     if(message == null) return;
 
-    /* background fcm 알람 클릭 시 페이지 이동 코드
+    /* background fcm 알람 클릭 시 페이지 이동
     navigatorKey.currentState?.pushNamed(
       '/notification_screen',
       arguments: message,
@@ -64,7 +64,7 @@ class Fcm{
 
     // fcm 알림 초기 메세지 수신 시 실행
     FirebaseMessaging.instance.getInitialMessage().then(handleMessage);
-    // background 실행 중 fcm 알림 클릭 시 실행
+    // background 실행 중 fcm 알림 클릭 시 실행, 원하는 페이지로 이동 가능
     FirebaseMessaging.onMessageOpenedApp.listen(handleMessage);
     // foreground 실행 중 fcm 메세지 수신 시 실행(
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
@@ -75,18 +75,19 @@ class Fcm{
       // local notification to show to users using the created channel.
       if (notification != null && android != null) {
         flutterLocalNotificationsPlugin.show(
-            notification.hashCode,
-            notification.title,
-            notification.body,
-            NotificationDetails(
-              android: AndroidNotificationDetails(
-                channel.id,
-                channel.name,
-                channel.description,
-                icon: android?.smallIcon,
-                // other properties...
-              ),
-            ));
+          notification.hashCode,
+          notification.title,
+          notification.body,
+          NotificationDetails(
+            android: AndroidNotificationDetails(
+              channel.id,
+              channel.name,
+              channel.description,
+              icon: android?.smallIcon,
+              // other properties...
+            ),
+          )
+        );
       }
     });
   }

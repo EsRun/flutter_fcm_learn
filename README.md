@@ -1,6 +1,6 @@
 # fcm_learn
 
-A new Flutter project.
+This project is a firebase fcm push example.
 
 ## Getting Started
 
